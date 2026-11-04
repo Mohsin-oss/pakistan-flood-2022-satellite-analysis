@@ -1,0 +1,5 @@
+# Starter Python environment for validation and summary plots
+numpy==1.26.4
+pandas==2.2.3
+rasterio==1.4.3
+matplotlib==3.9.4

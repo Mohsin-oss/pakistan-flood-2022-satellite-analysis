@@ -1,0 +1,17 @@
+{
+  "name": "Dadu–Qambar, Sindh",
+  "status": "provisional",
+  "crs": "EPSG:4326",
+  "bbox_order": [
+    "west",
+    "south",
+    "east",
+    "north"
+  ],
+  "bbox": [
+    67.2,
+    26.4,
+    68.6,
+    28.1
+  ]
+}
