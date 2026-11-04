@@ -1,6 +1,6 @@
 # Output data dictionary
 
-All area fields are in km². Dates are inclusive UTC dates. Percentages are on a 0–100 scale.
+All area fields are in km². Dates are inclusive UTC dates. Percentages are on a 0–100 scale. The table includes field names from the archived exports and earlier reconstruction. In Script 06, the calibration domain is the intersection of the baseline and the six April holdouts. The matched domain also requires valid observations in both checkpoints.
 
 | Field or group | Definition |
 | --- | --- |
@@ -13,7 +13,8 @@ All area fields are in km². Dates are inclusive UTC dates. Percentages are on a
 | `matched_domain_km2` | Common observed area used by the pair and April holdouts. |
 | `*_coverage_percent` | Valid area divided by calibration area × 100. The matched field uses the matched area as numerator. |
 | `first_valid_km2`, `second_valid_km2` | Calibration area observed by each checkpoint separately, before intersecting holdouts and the other checkpoint. |
-| `raw_km2`, `clean_km2` | Area flagged before and after terrain and patch filters. |
+| `candidate_area_km2`, `slope_filtered_area_km2`, `final_classified_area_km2` | August candidate area before terrain filtering, after terrain filtering, and after patch cleanup. |
+| `classified_a_km2`, `classified_b_km2`, `change_b_minus_a_km2` | Two classified areas on the matched domain and the second area minus the first. |
 | `april_*_km2`, `june_*_km2`, `first_km2`, `second_km2` | Cleaned classifier area on the comparison's matched domain. |
 | `preflood_mean_km2`, `preflood_sample_sd_km2` | Mean and sample standard deviation of the six April holdout areas. |
 | `recovery_lower_km2`, `recovery_upper_km2` | Descriptive limits calculated from those holdouts. |

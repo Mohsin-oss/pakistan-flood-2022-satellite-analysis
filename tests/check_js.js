@@ -1,19 +1,16 @@
-// Check individual files and the exact concatenations used in Code Editor.
+// Check that each standalone Code Editor script parses and uses the configured AOI.
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
 
-const directory = 'gee';
-const common = fs.readFileSync(directory + '/00_common.js', 'utf8');
-const entries = fs.readdirSync(directory).filter(name => /^0[1-5]_.*\.js$/.test(name));
-assert.equal(entries.length, 5);
+const entries = fs.readdirSync('gee').filter(name => name.endsWith('.js')).sort();
+assert.deepEqual(entries.map(name => name.slice(0, 2)), ['01', '02', '03', '04', '05', '06']);
 const aoi = JSON.parse(fs.readFileSync('configs/aoi.json', 'utf8'));
-const bounds = common.match(/ee\.Geometry\.Rectangle\((\[[^\]]+\])/)[1];
-assert.deepEqual(JSON.parse(bounds), aoi.bbox);
-new vm.Script(common, {filename: '00_common.js'});
 for (const entry of entries) {
-  const code = fs.readFileSync(directory + '/' + entry, 'utf8');
+  const code = fs.readFileSync('gee/' + entry, 'utf8');
+  const bounds = code.match(/ee\.Geometry\.Rectangle\(\s*(\[[^\]]+\])/);
+  assert.ok(bounds, 'Expected a rectangle in ' + entry);
+  assert.deepEqual(JSON.parse(bounds[1]), aoi.bbox, entry);
   new vm.Script(code, {filename: entry});
-  new vm.Script(common + '\n' + code, {filename: 'combined_' + entry});
 }
-console.log('Five Earth Engine entry points and shared code parse. AOI matches config.');
+console.log('Six standalone Earth Engine scripts parse and match the configured AOI.');

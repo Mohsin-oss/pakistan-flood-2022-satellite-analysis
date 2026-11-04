@@ -2,7 +2,7 @@
 
 | Item | Source | Status |
 | --- | --- | --- |
-| `gee/00_common.js`, `gee/01_*.js` through `gee/05_*.js` | Study handoff parameters and accessible project-01 discussion | Reconstructed; local syntax and AOI consistency checks only. Original scripts and revisions were not available. |
+| Six numbered files in `gee/` | User-supplied Stage 1–5 reconstructions, compacted by removing decorative comments | All six ran in Earth Engine. See [reviewed reruns](methodology.md#reviewed-reruns) for the historical comparisons and their limits. |
 | [stage5_june_recovery_matched.csv](../results/tables/stage5_june_recovery_matched.csv) | Existing Earth Engine export recovered locally | Byte-preserved historical export. Recomputed envelope, flags and area ratio agree with CSV. |
 | [stage5_late_june_recovery_matched.csv](../results/tables/stage5_late_june_recovery_matched.csv) | Existing Earth Engine export recovered locally | Byte-preserved historical export. Recomputed envelope, flags and area ratio agree with CSV. |
 | April/May checkpoint results | project-01 discussion and May–June Work handoff | Reported numbers. Raw exports unavailable. |
