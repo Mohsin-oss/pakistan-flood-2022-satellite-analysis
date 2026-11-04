@@ -10,5 +10,8 @@ Open each numbered JavaScript file in a separate Earth Engine Code Editor script
 | `04_multitemporal_comparison.js` | Two windows on a common valid domain, with classified areas, fractions and change |
 | `05_preflood_recovery_calibration.js` | Six April holdout areas and the pre-flood envelope |
 | `06_matched_recovery_comparison.js` | Two checkpoints and a recalculated envelope on their shared domain |
+| `07_stage6_validation_export.js` | Two-band 20 m GeoTIFF for independent reference comparison |
+
+Start Script 07's image export in **Tasks**. See the [Stage 6 export notes](../docs/stage-06-validation.md#sentinel-2-export).
 
 See the [methodology and run checks](../docs/methodology.md). Run `python src/audit.py recovery` with the archived June CSV paths to audit their arithmetic.
