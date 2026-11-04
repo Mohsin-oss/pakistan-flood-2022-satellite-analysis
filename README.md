@@ -6,7 +6,7 @@ Reproducible Sentinel-2 satellite analysis of the 2022 Pakistan floods, includin
 
 The provisional Dadu–Qambar study area in Sindh is recorded in [the AOI config](configs/aoi.json). The bounding box uses west, south, east, north order in WGS 84.
 
-- **Stage 5 · Recovery assessment** — Completed in the working study, with caveats. The scripts and exports used for that stage have yet to be archived and verified here.
+- **Stage 5 · Recovery assessment** — Completed in the working study, with caveats. Two original June exports are archived. The Stage 1–5 scripts are documented reconstructions awaiting an Earth Engine rerun.
 - **Stage 6 · Independent validation** — Underway. Reference selection, comparison design, and results are pending in this repository.
 
 Sentinel-2 classifications represent candidate inundation. Clouds, shadows, missing observations, and classification errors can affect mapped extent. A decrease in classified water can indicate apparent recession where both dates have valid observations. It cannot establish recovery of land use, livelihoods, or infrastructure by itself.
@@ -14,11 +14,25 @@ Sentinel-2 classifications represent candidate inundation. Clouds, shadows, miss
 ## Reproduction setup
 
 1. Use the latest stable Python release available when you set up the project. Record the exact version with `python --version` for reproducibility. Create a virtual environment with `python -m venv .venv` and activate it. Check that the starter pins in `requirements.txt` support your Python release, then install them with `python -m pip install -r requirements.txt`.
-2. Use the Earth Engine Code Editor with an authorized project. The provisional AOI is available in `configs/aoi.json`. Add the original scripts to `gee/` before attempting a rerun.
+2. Use the Earth Engine Code Editor with an authorized project. The provisional AOI is available in `configs/aoi.json`. Follow the [Earth Engine run guide](gee/README.md).
 3. Keep source imagery and local exports under `data/raw/` and derived analysis inputs under `data/processed/`. Put reviewed, shareable summaries under `results/tables/` and `results/figures/`.
 4. Record inputs, observation dates, valid coverage, parameters, grid, and export provenance before interpreting results. See the [Stage 6 checklist](docs/stage-06-validation.md).
 
-`src/` is reserved for Python analysis and `tests/` for checks once the original workflow is recovered. The environment pins are starter dependencies. The scientific workflow has yet to be rerun from this repository.
+### Workflow and checks
+
+**01 Coverage → 02 Baseline and event composites → 03 Otsu diagnostics and event classification → 04 Evolution → 05 Matched-domain recovery**
+
+Each stage loads the shared JavaScript followed by its entry point. Stages 3–5 rebuild the calibration inputs with the same functions and parameters. See the [methods and findings](docs/stages-01-05.md), [provenance](docs/provenance.md) and [data dictionary](docs/data-dictionary.md).
+
+Run these checks from the repository root. The CSV audit uses the Python standard library.
+
+```sh
+node tests/check_js.js
+python -m unittest discover -s tests
+python src/audit.py recovery results/tables/stage5_june_recovery_matched.csv results/tables/stage5_late_june_recovery_matched.csv
+```
+
+The checks cover JavaScript syntax, shared AOI consistency, the Otsu utility and historical recovery arithmetic. Earth Engine execution and agreement with historical spatial outputs are pending.
 
 ## Licensing
 
