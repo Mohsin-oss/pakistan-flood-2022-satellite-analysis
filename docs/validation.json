@@ -16,15 +16,55 @@
     "stage6_4_disagreement/disagreement_cells_10km.csv"
   ],
   "unverified": [
-    "Fresh environment installation",
     "Fresh Earth Engine execution of packaged Stage 7 reconstructions",
     "May recovery export",
-    "Pixel reconciliation of 0.1412 km2 counting difference"
+    "Pixel reconciliation of 0.1412 km2 counting difference",
+    "Network-only pip installation (download timeouts)",
+    "Full raw-input spatial rerun in the new clean environment"
   ],
   "github_publication": {
     "repository": "https://github.com/Mohsin-oss/pakistan-flood-2022-satellite-analysis",
     "branch": "main",
     "note": "This record accompanies the publication commit; inspect Git history and Actions for the publication and CI evidence."
   },
-  "license_adoption": "pending"
+  "license_adoption": "pending",
+  "clean_windows_reproduction": {
+    "tested_commit": "b84e778a04a39671b679557a092a3f7b8eebc25d",
+    "platform": "Windows",
+    "python": "3.14.6",
+    "environment": "New isolated Conda environment installed from cached packages",
+    "primary_dependency_versions": {
+      "numpy": "2.5.3",
+      "geopandas": "1.2.0",
+      "shapely": "2.2.0",
+      "pyproj": "3.8.0",
+      "pyogrio": "0.13.0",
+      "rasterio": "1.5.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.10.9"
+    },
+    "published_checksums_verified": 72,
+    "audit": "Passed recovery, agreement, five sensitivity tests and spatial cell totals",
+    "figures": {
+      "figure01_flood_map_agreement": {
+        "png": "byte-for-byte identical, zero differing pixels",
+        "svg": "identical after removing timestamps and normalizing generated element IDs"
+      },
+      "figure02_sensitivity_all_tests": {
+        "png": "byte-for-byte identical, zero differing pixels",
+        "svg": "identical after removing timestamps and normalizing generated element IDs"
+      },
+      "figure03_june_recovery": {
+        "png": "byte-for-byte identical, zero differing pixels",
+        "svg": "identical after removing timestamps and normalizing generated element IDs"
+      }
+    },
+    "scope": "Regeneration from archived CSV/JSON summaries",
+    "pip_install": "Attempted online installation timed out"
+  },
+  "script_verification_confirmation": {
+    "source": "Project owner confirmation in chat",
+    "statement": "All scripts run throughout the study were verified",
+    "scope_note": "This confirmation is separate from an independently recorded fresh run of the packaged Stage 7 reconstruction versions."
+  }
 }
