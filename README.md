@@ -13,7 +13,7 @@ Sentinel-2 classifications represent candidate inundation. Clouds, shadows, miss
 
 ## Reproduction setup
 
-1. Create a Python 3.11 virtual environment with `python -m venv .venv`, activate it, and run `python -m pip install -r requirements.txt`.
+1. Use the latest stable Python release available when you set up the project. Record the exact version with `python --version` for reproducibility. Create a virtual environment with `python -m venv .venv` and activate it. Check that the starter pins in `requirements.txt` support your Python release, then install them with `python -m pip install -r requirements.txt`.
 2. Use the Earth Engine Code Editor with an authorized project. The provisional AOI is available in `configs/aoi.json`. Add the original scripts to `gee/` before attempting a rerun.
 3. Keep source imagery and local exports under `data/raw/` and derived analysis inputs under `data/processed/`. Put reviewed, shareable summaries under `results/tables/` and `results/figures/`.
 4. Record inputs, observation dates, valid coverage, parameters, grid, and export provenance before interpreting results. See the [Stage 6 checklist](docs/stage-06-validation.md).
