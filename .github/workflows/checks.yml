@@ -16,3 +16,4 @@ jobs:
       - run: node tests/check_js.js
       - run: python -m unittest discover -s tests
       - run: python src/audit.py recovery results/tables/stage5_*_recovery_matched.csv
+      - run: python scripts/verify_results.py

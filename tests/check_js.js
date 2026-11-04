@@ -4,7 +4,7 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 
 const entries = fs.readdirSync('gee').filter(name => name.endsWith('.js')).sort();
-assert.deepEqual(entries.map(name => name.slice(0, 2)), ['01', '02', '03', '04', '05', '06', '07']);
+assert.deepEqual(entries.map(name => name.slice(0, 2)), ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12']);
 const aoi = JSON.parse(fs.readFileSync('configs/aoi.json', 'utf8'));
 for (const entry of entries) {
   const code = fs.readFileSync('gee/' + entry, 'utf8');
@@ -13,4 +13,4 @@ for (const entry of entries) {
   assert.deepEqual(JSON.parse(bounds[1]), aoi.bbox, entry);
   new vm.Script(code, {filename: entry});
 }
-console.log('Seven standalone Earth Engine scripts parse and match the configured AOI.');
+console.log('Twelve standalone Earth Engine scripts parse and match the configured AOI.');

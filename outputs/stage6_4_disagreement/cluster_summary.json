@@ -1,0 +1,64 @@
+[
+  {
+    "direction": "Sentinel-2 only",
+    "threshold_km2": 10,
+    "cluster_count": 3,
+    "top_clusters": [
+      {
+        "cells": 87,
+        "area_km2": 1750.38,
+        "lon": 67.9005,
+        "lat": 27.2147,
+        "east": 391120.0957142266,
+        "north": 3010688.172812123
+      },
+      {
+        "cells": 1,
+        "area_km2": 12.81,
+        "lon": 68.1475,
+        "lat": 26.4428,
+        "east": 415000.0,
+        "north": 2925000.0
+      },
+      {
+        "cells": 1,
+        "area_km2": 10.59,
+        "lon": 68.1357,
+        "lat": 27.9774,
+        "east": 415000.0,
+        "north": 3095000.0
+      }
+    ]
+  },
+  {
+    "direction": "UNOSAT only",
+    "threshold_km2": 10,
+    "cluster_count": 4,
+    "top_clusters": [
+      {
+        "cells": 1,
+        "area_km2": 18.9,
+        "lon": 68.034,
+        "lat": 27.9767,
+        "east": 405000.0,
+        "north": 3095000.0
+      },
+      {
+        "cells": 1,
+        "area_km2": 12.26,
+        "lon": 68.3455,
+        "lat": 26.8952,
+        "east": 435000.0,
+        "north": 2975000.0
+      },
+      {
+        "cells": 1,
+        "area_km2": 10.7,
+        "lon": 68.1364,
+        "lat": 27.8871,
+        "east": 415000.0,
+        "north": 3085000.0
+      }
+    ]
+  }
+]

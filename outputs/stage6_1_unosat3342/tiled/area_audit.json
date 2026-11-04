@@ -1,0 +1,14 @@
+{
+  "crs": "EPSG:32642",
+  "method": "Clip source rings to non-overlapping 10 km tiles, repair invalid pieces with GEOS MakeValid structure, dissolve inside each tile, and intersect with the study and analysis footprint",
+  "area_note": "Repair delta is nominal raw signed polygon area versus repaired dissolved area over the same processing tiles, before exact footprint clipping.",
+  "tiles_checked": 188,
+  "nonempty_tiles": 173,
+  "invalid_tile_pieces_repaired": 1840,
+  "comparison_footprint_km2": 16957.961916909604,
+  "nominal_raw_tiled_area_km2": 5927.829867167734,
+  "repaired_dissolved_tiled_area_km2": 5927.829867167732,
+  "repair_and_dissolve_delta_km2": -1.8189894035458565e-12,
+  "repair_and_dissolve_delta_percent": -3.0685587209927025e-14,
+  "final_clipped_flood_area_km2": 5890.673124565689
+}

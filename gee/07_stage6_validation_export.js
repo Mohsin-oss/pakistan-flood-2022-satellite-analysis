@@ -72,9 +72,8 @@ var flood = candidate.connectedPixelCount(25, true).gte(25)
   .rename('flood')
   .toByte();
 
-// Band 1: 1 = flood, 0 = valid with no mapped flood, 255 = NoData.
-// Band 2: 1 = valid baseline and event, 0 = invalid within the AOI,
-//         255 = outside the AOI.
+// Use flood together with valid_observation and the separately rasterized AOI.
+// valid_observation = 1 selects observed pixels. Zero also occurs outside the AOI.
 var validObservation = domain.rename('valid_observation').toByte();
 var exportImage = flood.addBands(validObservation).unmask(255, false);
 

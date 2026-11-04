@@ -1,0 +1,96 @@
+{
+  "grid": {
+    "crs": "EPSG:32642",
+    "transform": [
+      20.0,
+      0.0,
+      320440.0,
+      0.0,
+      -20.0,
+      3109600.0
+    ],
+    "bounds": [
+      320440.0,
+      2920040.0,
+      460720.0,
+      3109600.0
+    ],
+    "width": 7014,
+    "height": 9478,
+    "source_band_descriptions": [
+      "flood",
+      "valid_observation"
+    ],
+    "nodata": 255.0
+  },
+  "source_mask_cross_tab_pixels": {
+    "flood_0_valid_0": 1202398,
+    "flood_0_valid_1": 38931751,
+    "flood_0_valid_255": 0,
+    "flood_1_valid_0": 0,
+    "flood_1_valid_1": 22132491,
+    "flood_1_valid_255": 0,
+    "flood_255_valid_0": 4212052,
+    "flood_255_valid_1": 0,
+    "flood_255_valid_255": 0
+  },
+  "rasterization": "Pixel center on the Sentinel-2 export grid",
+  "shared_valid_definition": "Valid Sentinel-2 baseline and event observation inside UNOSAT assessed footprint",
+  "area_basis": "20 x 20 m projected grid cells",
+  "areas": {
+    "s2_aoi": {
+      "pixels": 65260928,
+      "km2": 26104.3712
+    },
+    "s2_valid": {
+      "pixels": 61050824,
+      "km2": 24420.3296
+    },
+    "s2_valid_flag_outside_rasterized_aoi": {
+      "pixels": 13418,
+      "km2": 5.3672
+    },
+    "s2_flood_inside_valid_aoi": {
+      "pixels": 22129740,
+      "km2": 8851.896
+    },
+    "unosat_footprint_outside_rasterized_aoi": {
+      "pixels": 31875,
+      "km2": 12.75
+    },
+    "s2_invalid_inside_aoi": {
+      "pixels": 4210104,
+      "km2": 1684.0416
+    },
+    "unosat_assessed_inside_s2_aoi": {
+      "pixels": 42363045,
+      "km2": 16945.218
+    },
+    "shared_valid": {
+      "pixels": 41240062,
+      "km2": 16496.0248
+    },
+    "unosat_assessed_without_valid_s2": {
+      "pixels": 1122983,
+      "km2": 449.1932
+    },
+    "valid_s2_outside_unosat_assessment": {
+      "pixels": 19810762,
+      "km2": 7924.3048
+    },
+    "unosat_flood_inside_assessed": {
+      "pixels": 14709424,
+      "km2": 5883.7696
+    },
+    "unosat_flood_inside_shared_valid": {
+      "pixels": 14687001,
+      "km2": 5874.8004
+    }
+  },
+  "percentages": {
+    "shared_valid_of_unosat_assessed": 97.34914475576531,
+    "shared_valid_of_s2_aoi": 63.19257672829905,
+    "shared_valid_of_s2_valid": 67.55037737082795,
+    "s2_valid_of_s2_aoi": 93.54881377108214
+  }
+}

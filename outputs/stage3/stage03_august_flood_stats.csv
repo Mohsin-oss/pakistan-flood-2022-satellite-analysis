@@ -1,0 +1,2 @@
+system:index,candidate_area_km2,change_mndwi_threshold,event,event_mndwi_threshold,final_classified_area_km2,final_percent_of_valid,max_slope_degrees,min_connected_pixels,slope_filtered_area_km2,valid_area_km2,.geo
+0,9068.249281906426,0.4200440926570086,2022-08-29_31,0.10994999254541872,8736.600023970808,35.75868830685959,5,25,8852.155563779143,24432.104301473682,"{""type"":""MultiPoint"",""coordinates"":[]}"

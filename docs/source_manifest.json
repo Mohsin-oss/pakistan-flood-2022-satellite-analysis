@@ -1,0 +1,197 @@
+[
+  {
+    "package_path": "gee/01_sensor_availability.js",
+    "source_path": "work\\flood-publication\\gee\\01_sensor_availability.js",
+    "source_sha256": "f2644c81ea4b703b56830ba28482259aaea432e9e564041f766f8f9db0e44376"
+  },
+  {
+    "package_path": "gee/02_preflood_baseline.js",
+    "source_path": "work\\flood-publication\\gee\\02_preflood_baseline.js",
+    "source_sha256": "dffb6b8a0661d6056703ccc920d759e20958800e3cd3a52338db9ebcc084ed5d"
+  },
+  {
+    "package_path": "gee/03_august_flood_classification.js",
+    "source_path": "work\\flood-publication\\gee\\03_august_flood_classification.js",
+    "source_sha256": "aa10e4a955ebb91cee795e6fb8cc5e4c6bb4e5643acbcc7bcb2ded6d8efd3736"
+  },
+  {
+    "package_path": "gee/04_multitemporal_comparison.js",
+    "source_path": "work\\flood-publication\\gee\\04_multitemporal_comparison.js",
+    "source_sha256": "cdb05e70e9ccbbf4dd9763aade85b40a29c8ca2d1fdb123bf4177e99038af277"
+  },
+  {
+    "package_path": "gee/05_preflood_recovery_calibration.js",
+    "source_path": "work\\flood-publication\\gee\\05_preflood_recovery_calibration.js",
+    "source_sha256": "61a1d343d596b112284ba610087c1d05eda2c83e0bc4af26403700f83ad2c630"
+  },
+  {
+    "package_path": "gee/06_matched_recovery_comparison.js",
+    "source_path": "work\\flood-publication\\gee\\06_matched_recovery_comparison.js",
+    "source_sha256": "086b6de91a270839de8be660ef854c971cd4e403c9616e101fd89b6ce773a2f4"
+  },
+  {
+    "package_path": "gee/07_stage6_validation_export.js",
+    "source_path": "work\\flood-publication\\gee\\07_stage6_validation_export.js",
+    "source_sha256": "0551135de43e608ffb41c1eda734b89adc93ed9781efa83281123095377b5ccc"
+  },
+  {
+    "package_path": "outputs/stage5_historical/stage5_june_recovery_matched.csv",
+    "source_path": "work\\flood-publication\\results\\tables\\stage5_june_recovery_matched.csv",
+    "source_sha256": "a5c17a2df555d4fdad704304959f6f7aa0e4a580ee8bf4f9b18052e5a1c4abfd"
+  },
+  {
+    "package_path": "outputs/stage5_historical/stage5_late_june_recovery_matched.csv",
+    "source_path": "work\\flood-publication\\results\\tables\\stage5_late_june_recovery_matched.csv",
+    "source_sha256": "80be40fb7fa0d759f5bef18b7ae5b8bf60ed1e7357d4a611df85da6287e335c9"
+  },
+  {
+    "package_path": "outputs/stage3/stage03_august_flood_stats.csv",
+    "source_path": "outputs\\stage3\\stage03_august_flood_stats.csv",
+    "source_sha256": "efa0f8e0734d4c19c9a2f8d40324de9bdd13ad01228a4ee41cff2b4ef7946fe7"
+  },
+  {
+    "package_path": "outputs/stage4/stage04_aug_29_31_sep_03_05.csv",
+    "source_path": "outputs\\stage4\\stage04_aug_29_31_sep_03_05.csv",
+    "source_sha256": "3473ce7e8e311bff51f7c9fd3a4746facbd33541d30a599fc0e40737b48176d0"
+  },
+  {
+    "package_path": "outputs/stage5/stage05_preflood_calibration.csv",
+    "source_path": "outputs\\stage5\\stage05_preflood_calibration.csv",
+    "source_sha256": "a751aef0913439da121f7ff2e02bb224bd7e2e41f0472c256c753d1a1f2c550f"
+  },
+  {
+    "package_path": "outputs/stage6/stage05_jun_17_20_jun_22_25.csv",
+    "source_path": "outputs\\stage6\\stage05_jun_17_20_jun_22_25.csv",
+    "source_sha256": "ca635ed6ea7a9d6136358a25f1871516123ad8caca7caa43076f98fe5d5d1cb5"
+  },
+  {
+    "package_path": "outputs/stage7-mndwi/stage7_1_event_mndwi_sensitivity.csv",
+    "source_path": "outputs\\stage7-mndwi\\stage7_1_event_mndwi_sensitivity.csv",
+    "source_sha256": "bb4444b8f996e620c2d23803ece1a1cd5baa8daad50bb7b9d1af1ae5ea87bc0c"
+  },
+  {
+    "package_path": "outputs/stage7-mndwi/stage7_2_change_mndwi_sensitivity.csv",
+    "source_path": "outputs\\stage7-mndwi\\stage7_2_change_mndwi_sensitivity.csv",
+    "source_sha256": "5b2874f365a8e81ebc6fad5d0e890e5b66cbedb2c26c339fa5c13eb16acff225"
+  },
+  {
+    "package_path": "outputs/stage7-mndwi/stage7_3_slope_sensitivity.csv",
+    "source_path": "outputs\\stage7-mndwi\\stage7_3_slope_sensitivity.csv",
+    "source_sha256": "f5b1e40850273f34a8fdd07d7a819cf9ae8d5dd0efb4df92dd763ef9418fd573"
+  },
+  {
+    "package_path": "outputs/stage7-mndwi/stage7_4_patch_size_sensitivity.csv",
+    "source_path": "outputs\\stage7-mndwi\\stage7_4_patch_size_sensitivity.csv",
+    "source_sha256": "92a2d3e84f4f2a4db1939f0a3449ef93a65bdae7db47aa15477fc86440439673"
+  },
+  {
+    "package_path": "outputs/stage7-mndwi/stage7_5_cloud_cutoff_sensitivity.csv",
+    "source_path": "outputs\\stage7-mndwi\\stage7_5_cloud_cutoff_sensitivity.csv",
+    "source_sha256": "61829f489918eef43e3c7633630a114fb137b7c3a06f3fd34db7df077510e454"
+  },
+  {
+    "package_path": "outputs/stage6_2_alignment/alignment_audit.json",
+    "source_path": "outputs\\stage6_2_alignment\\alignment_audit.json",
+    "source_sha256": "479d1fa822fc7d29ecc3e8be37be2f2230426cfbe36f3e90439b57fc45a8125a"
+  },
+  {
+    "package_path": "outputs/stage6_3_agreement/agreement_metrics.json",
+    "source_path": "outputs\\stage6_3_agreement\\agreement_metrics.json",
+    "source_sha256": "72a8701dd4420880251bb7d0add137d83104ae3a3362073eff005cae7be076c9"
+  },
+  {
+    "package_path": "outputs/stage6_3_agreement/confusion_matrix.csv",
+    "source_path": "outputs\\stage6_3_agreement\\confusion_matrix.csv",
+    "source_sha256": "59c89ddbaf5b9870ea964a93678dfe4721701c4afe8a707ba5ad45ea92fadbca"
+  },
+  {
+    "package_path": "outputs/stage6_4_disagreement/cluster_summary.json",
+    "source_path": "outputs\\stage6_4_disagreement\\cluster_summary.json",
+    "source_sha256": "dfc4cb35d09cdfb630f5c30973fccd1335214163c4c054771b1b1b6fd240b554"
+  },
+  {
+    "package_path": "outputs/stage6_4_disagreement/disagreement_cells_10km.csv",
+    "source_path": "outputs\\stage6_4_disagreement\\disagreement_cells_10km.csv",
+    "source_sha256": "dcfb1cd7d833a69a5cef31353952104f7246a847874a212ab0f88e992ae03a8a"
+  },
+  {
+    "package_path": "outputs/stage6_4_disagreement/stage6_4_disagreement_map.png",
+    "source_path": "outputs\\stage6_4_disagreement\\stage6_4_disagreement_map.png",
+    "source_sha256": "1585f4789a230bdfcb95566a29cd6e2a560978e267e836b67445f8b14ca02ec4"
+  },
+  {
+    "package_path": "outputs/stage8_figures/figure01_flood_map_agreement.png",
+    "source_path": "outputs\\stage8_figures\\figure01_flood_map_agreement.png",
+    "source_sha256": "5299db01acd6b38b5019597c354a993389050451e80fab0c116926a576664fb2"
+  },
+  {
+    "package_path": "outputs/stage8_figures/figure01_flood_map_agreement.svg",
+    "source_path": "outputs\\stage8_figures\\figure01_flood_map_agreement.svg",
+    "source_sha256": "7d0a636771c1c3213a6233b44a46f541646ae981488aaef52a8f62ddc1dd192c"
+  },
+  {
+    "package_path": "outputs/stage8_figures/figure02_sensitivity_all_tests.png",
+    "source_path": "outputs\\stage8_figures\\figure02_sensitivity_all_tests.png",
+    "source_sha256": "aa79574523b86c9398e3688dcecef6ed7274f012b37023f7a41444f3a460f1d5"
+  },
+  {
+    "package_path": "outputs/stage8_figures/figure02_sensitivity_all_tests.svg",
+    "source_path": "outputs\\stage8_figures\\figure02_sensitivity_all_tests.svg",
+    "source_sha256": "cb213728e145f3e857263441f06190da7c01af78c070d327fc82a74a06c1e659"
+  },
+  {
+    "package_path": "outputs/stage8_figures/figure03_june_recovery.png",
+    "source_path": "outputs\\stage8_figures\\figure03_june_recovery.png",
+    "source_sha256": "719697eb8031e44fe19862c1c953c6e6b98ccab54f7ddc72859e09c527f65196"
+  },
+  {
+    "package_path": "outputs/stage8_figures/figure03_june_recovery.svg",
+    "source_path": "outputs\\stage8_figures\\figure03_june_recovery.svg",
+    "source_sha256": "b67cea027c1413ba47cdf32ebbc92171020c7576b528f66d891a0417b42c6839"
+  },
+  {
+    "package_path": "outputs/stage8_figures/stage8_final_interpretation_and_captions.md",
+    "source_path": "outputs\\stage8_figures\\stage8_final_interpretation_and_captions.md",
+    "source_sha256": "813865cde9413c5dc51a383b7b48f6d1953470e08fb56c1c0cde3f730c21dc8a"
+  },
+  {
+    "package_path": "outputs/stage6_1_unosat3342/tiled/area_audit.json",
+    "source_path": "outputs\\stage6_1_unosat3342\\tiled\\area_audit.json",
+    "source_sha256": "8aeaeac792ac52d3b270db3427942e163901cf945e53402f83468934436b0a0d"
+  },
+  {
+    "package_path": "scripts/repair_unosat3342_tiled.py",
+    "source_path": "work\\repair_unosat3342_tiled.py",
+    "source_sha256": "6eee5e2041fd8f3281d26bc86c536c754f90c443d70fd57014ae8d6eb0cf23a1"
+  },
+  {
+    "package_path": "scripts/align_unosat3342.py",
+    "source_path": "work\\align_unosat3342.py",
+    "source_sha256": "01263475a2b065c9f16a581172c6f604ddc5b988121e9ba029bb2d1d5c4cca35"
+  },
+  {
+    "package_path": "scripts/stage6_3_agreement.py",
+    "source_path": "work\\stage6_3_agreement.py",
+    "source_sha256": "a24f42934b2bbcfda69b8ab813f37423a5e01f6fd9d1b22e92962314029b827f"
+  },
+  {
+    "package_path": "scripts/stage6_4_disagreement.py",
+    "source_path": "work\\stage6_4_disagreement.py",
+    "source_sha256": "9450d737a358b918708cccadd82bb2cbb8d19649c833f564c4a62fb3147da854"
+  },
+  {
+    "package_path": "scripts/stage8_figure01.py",
+    "source_path": "work\\stage8_figure01.py",
+    "source_sha256": "51f83bf2bad53019e4e82c264d46c97ac9dd2c78e636e38428604844a091fb4e"
+  },
+  {
+    "package_path": "scripts/stage8_figure02.py",
+    "source_path": "work\\stage8_figure02.py",
+    "source_sha256": "153ddb13b590c58db82fb088e4e7346f77a17ee77f63729eeb51251b5699a422"
+  },
+  {
+    "package_path": "scripts/stage8_figure03.py",
+    "source_path": "work\\stage8_figure03.py",
+    "source_sha256": "7e74e64091cc376829daebba63864d388fa25a491a36e00d2a7e7a0bb3b0d31a"
+  }
+]

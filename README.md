@@ -1,39 +1,50 @@
-# 2022 Pakistan Flood Satellite Analysis
+# Pakistan 2022 flood satellite analysis
 
-Reproducible Sentinel-2 satellite analysis of the 2022 Pakistan floods, including inundation dynamics, recovery assessment, validation, and uncertainty analysis using Google Earth Engine and Python.
+Sentinel-2 flood classification, June 2023 recovery assessment, comparison with UNOSAT Product 3342, and five parameter sensitivity tests.
 
-## Study area and status
+## Verified findings
 
-The provisional Dadu–Qambar study area in Sindh is recorded in [the AOI config](configs/aoi.json). The bounding box uses west, south, east, north order in WGS 84.
+- Sentinel-2 and UNOSAT comparison over 16,496.02 km² gives flood F1 0.800 and flood IoU 66.64%.
+- The slope cutoff has the largest area effect over the settings tested, with −11.18% at 3° relative to the 5° control.
+- The verified 22–25 June checkpoint is within its matched pre-flood envelope. Two consecutive qualifying checkpoints were unconfirmed through 25 June.
 
-- **Stage 5 · Recovery assessment** — Completed in the working study, with caveats. Two original June exports are archived. The six reconstructed scripts have been run in Earth Engine, with results documented in the methodology.
-- **Stage 6 · Independent validation** — Underway. Reference selection, comparison design, and results are pending in this repository.
+Read the [final interpretation and captions](outputs/stage8_figures/stage8_final_interpretation_and_captions.md). Figures are available as PNG and editable SVG in that directory. The [workflow and evidence guide](docs/reproduction.md) explains which script family produced each result.
 
-Sentinel-2 classifications represent candidate inundation. Clouds, shadows, missing observations, and classification errors can affect mapped extent. A decrease in classified water can indicate apparent recession where both dates have valid observations. It cannot establish recovery of land use, livelihoods, or infrastructure by itself.
+## Quick reproduction from included summaries
 
-## Reproduction setup
-
-1. Use the latest stable Python release available when you set up the project. Record the exact version with `python --version` for reproducibility. Create a virtual environment with `python -m venv .venv` and activate it. Check that the starter pins in `requirements.txt` support your Python release, then install them with `python -m pip install -r requirements.txt`.
-2. Use the Earth Engine Code Editor with an authorized project. The provisional AOI is available in `configs/aoi.json`. Follow the [Earth Engine run guide](gee/README.md).
-3. Keep source imagery and local exports under `data/raw/` and derived analysis inputs under `data/processed/`. Put reviewed, shareable summaries under `results/tables/` and `results/figures/`.
-4. Record inputs, observation dates, valid coverage, parameters, grid, and export provenance before interpreting results. See the [Stage 6 checklist](docs/stage-06-validation.md).
-
-### Workflow and checks
-
-**01 Sensor availability → 02 Baseline → 03 August classification → 04 Two-window comparison → 05 Recovery calibration → 06 Matched recovery**
-
-Each Earth Engine script runs independently. See the [methodology and rerun results](docs/methodology.md), [provenance](docs/provenance.md) and [data dictionary](docs/data-dictionary.md).
-
-Run these checks from the repository root. The CSV audit uses the Python standard library.
+Use Python with the versions recorded in `environment.json`. The pinned dependencies reflect the tested local environment. A fresh installation on another machine remains to be verified.
 
 ```sh
-node tests/check_js.js
-python -m unittest discover -s tests
-python src/audit.py recovery results/tables/stage5_june_recovery_matched.csv results/tables/stage5_late_june_recovery_matched.csv
+python -m venv .venv
+# Activate .venv using the command for your shell.
+python -m pip install -r requirements.txt
+python scripts/verify_results.py
+python scripts/stage8_figure01.py
+python scripts/stage8_figure02.py
+python scripts/stage8_figure03.py
 ```
 
-The checks cover JavaScript syntax, shared AOI consistency, the Otsu utility and historical recovery arithmetic. The methodology records which rerun summaries could be compared with historical values.
+The arithmetic audit uses the Python standard library. Figure scripts read the included CSV/JSON summaries. Full spatial reproduction requires the separately acquired inputs described in [the run guide](docs/reproduction.md).
 
-## Licensing
+## Layout
 
-MIT is proposed for original code, pending owner adoption. Imagery, reference products, and other third-party data retain their source terms. Record those terms before distributing derived files.
+| Directory | Contents |
+|---|---|
+| `gee/` | Twelve standalone Earth Engine scripts, ordered by workflow |
+| `scripts/` | Successful tiled reference repair, alignment, agreement, disagreement mapping, figure generation and arithmetic audit |
+| `outputs/` | Verified CSV/JSON summaries, maps, figures and final interpretation |
+| `docs/` | Reproduction guide, source provenance, input and package checksums |
+
+The 199 MB UNOSAT ZIP, source shapefiles, input GeoTIFF and derived spatial binaries are excluded from the shareable archive. Their acquisition steps and input hashes are recorded. The supplied vector repair is specific to the audited UNOSAT archive layout.
+
+## Scientific scope
+
+UNOSAT is a preliminary satellite reference acquired 2–4 days before the optical composite. Agreement covers only the shared valid footprint. The recovery envelope concerns the optical classification metric. Sensitivity tests vary one parameter at a time and do not estimate total uncertainty.
+
+The Stage 1–5 and fixed-grid Stage 6–7 classifier implementations differ. Their event areas must be interpreted with their own methods and domains. The May first-return claim remains provisional because its export is missing. The 0.1412 km² control difference between local Stage 6 counting and Earth Engine Stage 7 counting is unresolved at the pixel level.
+
+## Licensing and publication
+
+No project-wide code license has been adopted in this package. The owner should choose a license before public reuse is encouraged. UNOSAT and satellite products retain their source terms. Review redistribution terms before adding third-party source or derived geospatial data to a public repository.
+
+This repository contains the verified Stage 9 package. Automated checks cover script syntax, the configured study area, recovery arithmetic and the included result summaries. Full cloud and fresh-environment reproduction retain the limitations recorded in [validation status](docs/validation.json).

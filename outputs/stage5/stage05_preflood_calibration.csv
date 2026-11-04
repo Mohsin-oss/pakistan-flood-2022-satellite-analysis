@@ -1,0 +1,2 @@
+system:index,april_01_km2,april_06_km2,april_11_km2,april_16_km2,april_21_km2,april_26_km2,calibration_domain_km2,holdout_count,method,preflood_mean_km2,preflood_sample_sd_km2,recovery_lower_km2,recovery_upper_km2,.geo
+0,79.56187847049853,67.2022943787852,15.701034850636315,29.416885944507108,16.97358927623889,22.688815744179667,25958.52244790028,6,mean_plus_minus_2_sample_sd,38.59074977747429,27.660534456319947,0.0,93.91181869011419,"{""type"":""MultiPoint"",""coordinates"":[]}"

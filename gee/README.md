@@ -15,3 +15,9 @@ Open each numbered JavaScript file in a separate Earth Engine Code Editor script
 Start Script 07's image export in **Tasks**. See the [Stage 6 export notes](../docs/stage-06-validation.md#sentinel-2-export).
 
 See the [methodology and run checks](../docs/methodology.md). Run `python src/audit.py recovery` with the archived June CSV paths to audit their arithmetic.
+
+## Stage 7 sensitivity exports
+
+Scripts 08–12 test event MNDWI, change MNDWI, slope, minimum patch size and cloud cutoff, respectively. Run each separately and start its CSV export in **Tasks**. These five packaged scripts are reconstructions: syntax has been checked, but fresh Earth Engine execution is not yet verified. Archived sensitivity exports came from the earlier user-run scripts.
+
+Use the [complete reproduction guide](../docs/reproduction.md) to distinguish the Stage 1–5 and fixed-grid Stage 6–7 classifier families.

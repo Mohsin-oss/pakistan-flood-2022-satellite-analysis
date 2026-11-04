@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks": [
+    "12 Earth Engine scripts syntax checked",
+    "8 Python scripts compiled",
+    "Recovery, agreement, sensitivity and spatial cell arithmetic verified",
+    "All three Stage 8 figures regenerated",
+    "Tiled repair, alignment, agreement and disagreement workflows rerun with local inputs"
+  ],
+  "spatial_results_equal_to_archived": [
+    "stage6_1_unosat3342/tiled/area_audit.json",
+    "stage6_2_alignment/alignment_audit.json",
+    "stage6_3_agreement/agreement_metrics.json",
+    "stage6_4_disagreement/cluster_summary.json",
+    "stage6_3_agreement/confusion_matrix.csv",
+    "stage6_4_disagreement/disagreement_cells_10km.csv"
+  ],
+  "unverified": [
+    "Fresh environment installation",
+    "Fresh Earth Engine execution of packaged Stage 7 reconstructions",
+    "May recovery export",
+    "Pixel reconciliation of 0.1412 km2 counting difference"
+  ],
+  "github_publication": {
+    "repository": "https://github.com/Mohsin-oss/pakistan-flood-2022-satellite-analysis",
+    "branch": "main",
+    "note": "This record accompanies the publication commit; inspect Git history and Actions for the publication and CI evidence."
+  },
+  "license_adoption": "pending"
+}

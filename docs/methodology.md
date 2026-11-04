@@ -25,3 +25,7 @@ Use six independent temporal holdouts starting 1, 6, 11, 16, 21 and 26 April 202
 | 06 | The default June 2023 pair matches the archived areas to two decimals. The matched area is 25,772.33 km² and the upper limit is 93.74 km². The 17–20 June checkpoint is above the envelope at 97.52 km². The 22–25 June checkpoint qualifies at 87.27 km². |
 
 These checks establish execution and, where a historical comparison was available, agreement in the reported summaries. The classified areas represent candidate inundation. Independent reference agreement and physical recovery require separate evidence. See [provenance](provenance.md).
+
+## Later-stage evidence
+
+The scope above is the Stage 1–5 reconstruction. The fixed-grid Stage 6–7 classifier differs; see the [reproduction guide](reproduction.md) for its controls and grid. Reference agreement, sensitivity tests and final interpretation are now included under `outputs/`. The 0.1412 km² Stage 6/7 control difference remains unresolved at pixel level. Reference agreement does not establish physical recovery.

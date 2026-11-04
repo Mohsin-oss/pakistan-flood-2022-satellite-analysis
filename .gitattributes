@@ -1,1 +1,2 @@
-results/tables/stage5_*_recovery_matched.csv -text
+# Preserve checksummed package bytes on every platform.
+* -text
